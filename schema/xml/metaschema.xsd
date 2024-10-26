@@ -446,6 +446,13 @@
     </xs:complexContent>
   </xs:complexType>
 
+  <xs:simpleType name="MessageType">
+    <xs:annotation>
+      <xs:documentation>A message string used to report constraint condition violations in a document instance.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="StringDatatype"/>
+  </xs:simpleType>
+
   <xs:simpleType name="VersionType">
     <xs:annotation>
       <xs:documentation>A version string used to distinguish between multiple revisions of the same resource.</xs:documentation>
